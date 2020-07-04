@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- <widget id="com.app.mymusic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"> -->
+<widget id="com.app.mymusic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+
+    <name>MyMusic</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author href="http://www.caag.com.au" email="mohmmad82@hotmail.com">
+        Team Deveelopment
+    </author>
+
+    <preference name="permissions"                value="none"/> 
+    
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="phonegap-version"           value="3.4.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="splash-screen-duration"     value="3000" />
+    <preference name="auto-hide-splash-screen"    value="false" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+    <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+    <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+    <!-- Plugins -->
+    
+    <!-- Core plugins 
+
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />   
+    <gap:plugin name="org.apache.cordova.contacts" />
+   
+
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.console" />
+
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.device-orientation" /> -->
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+     <gap:plugin name="org.apache.cordova.dialogs" />
+     
+    <!-- Third party plugins -->
+    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    <!--
+        <gap:plugin name="com.phonegap.plugins.barcodescanner" />
+    -->
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <icon gap:density="ldpi" gap:platform="android" src="icon.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="icon.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="icon.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="icon.png" />
+    <icon gap:platform="blackberry" src="icon.png" />
+    <icon gap:platform="blackberry" gap:state="hover" src="icon.png" />
+    <icon gap:platform="ios" height="57" src="icon.png" />
+    <icon gap:platform="ios" height="72" src="icon.png" />
+    <icon gap:platform="ios" height="114" src="icon.png" />
+    <icon gap:platform="ios" height="144" src="icon.png" />
+    <icon gap:platform="webos" src="icon.png" />
+    <icon gap:platform="winphone" src="icon.png" />
+    <icon gap:platform="winphone" gap:role="background" src="icon.png" />
+    
+    <gap:splash gap:density="ldpi" gap:platform="android" src="splash.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="splash.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="splash.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="splash.png" />
+    <gap:splash gap:platform="blackberry" src="splash.png" />
+    <gap:splash gap:platform="ios" height="480" src="splash.png" />
+    <gap:splash gap:platform="ios" height="960" src="splash.png" />
+    <gap:splash gap:platform="ios" height="1024" src="splash.png" />
+    <gap:splash gap:platform="ios" height="768" src="splash.png" />
+    <gap:splash gap:platform="winphone" src="splash.png" />
+    
+
+    <content src="index.html" />
+    <access origin="*" />
+    
+</widget>

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+        <script src="js/albumdata.js"></script>
+        <!-- // <script src="stylesheet" href="js/Media.js"></script> -->
+        <title>Halo ACI!</title>
+        <style>
+        input.ui-slider-input {
+            display:none !important;
+        }
+        div.ui-slider { 
+            margin-left:-55px;
+        }
+        .ui-bar-a{
+            background-color: black;
+        }
+        </style>
+    </head>
+    <body>
+        
+ 
+        
+        <!-- ****************************************************************************************** -->
+      <div id="container">
+ 
+        <div data-role="page">
+            <div data-theme="c" data-role="header" data-position="fixed" style="background:url(img/headerhaloaci.png); background-repeat: no-repeat; background-size: 100% auto;">
+                <p style='margin-left:5%;' id="audio_title">&lt;3</p>
+                <input data-theme="a" type="range" name="slider" id="audio_position" disabled="true" value="0" min="0" max="100" data-highlight="true" class="ui-bar-a" />
+                <div class="ui-grid-b">
+                  <div class="ui-block-a">
+                    <a data-role="button" data-theme="a" id="play" href="#">
+                      <span class="ui-btn-text">P L A Y</span>
+                    </a>
+                  </div>
+                  <div class="ui-block-b">
+                    <a data-role="button" data-theme="a" id="stop"  href="#">
+                      <span class="ui-btn-text">S T O P</span>
+                    </a>
+                  </div>
+                  <div class="ui-block-c">
+                    <p style='text-align: center;' id="position_time">00:00/00:00</p>
+                    <!-- <div id="track"></div>
+                    <div id="pos"></div> -->
+                  </div>
+                </div>
+            </div>
+            <div data-role="main">
+              <ul data-role="listview" data-inset="true" id="lists" >
+                  
+                  
+              </ul>
+            </div>
+          </div>
+      </div>
+  
+    
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- // <script type="text/javascript" src="js/index.js"></script> -->
+        <script type="text/javascript" src="js/abc.js"></script>
+    </body>
+</html>
